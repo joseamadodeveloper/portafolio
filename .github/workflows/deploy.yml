@@ -42,6 +42,7 @@ jobs:
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD}}
           local-dir: build
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          dangerous-clean-slate: false
